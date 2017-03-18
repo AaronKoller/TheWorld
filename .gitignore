@@ -303,3 +303,5 @@ __pycache__/
 # !tools/packages.config
 
 # End of https://www.gitignore.io/api/windows,visualstudio
+/src/aspdotnetcore-efcore-bootstrap-angular-web-app.zip
+/src/aspdotnetcore-efcore-bootstrap-angular-web-app

@@ -6,6 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\img\user1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.0" />
@@ -14,8 +15,5 @@
     <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\css\img\" />
   </ItemGroup>
 </Project>
