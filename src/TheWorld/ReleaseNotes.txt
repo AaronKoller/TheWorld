@@ -1,0 +1,2 @@
+﻿To install MVC to a blank project:  https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc/
+Install-Package Microsoft.AspNetCore.Mvc
