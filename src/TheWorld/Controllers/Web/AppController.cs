@@ -4,12 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using TheWorld.Services;
 using TheWorld.ViewModels;
 
 namespace TheWorld.Controllers.Web
 {
     public class AppController : Controller
     {
+        private IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+            _mailService = mailService;
+        }
+
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -23,6 +31,8 @@ namespace TheWorld.Controllers.Web
         [HttpPost]
         public IActionResult Contact(ContactViewModel model)
         {
+            _mailService.SendMail("aaron@gmail.com", model.Email, "The World", model.Message);
+
             return View();
         }
 
