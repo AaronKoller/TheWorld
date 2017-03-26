@@ -18,7 +18,11 @@ namespace TheWorld
             _env = env;
 
             var builder = new ConfigurationBuilder()
-                .AddJsonFile("config.json");
+                //.AddJsonFile(@"\..\..\config.json"); //D:config
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile(@"config.json")
+                .AddEnvironmentVariables();
+                //.AddJsonFile(@"config.json");
 
             _config = builder.Build();
         }
@@ -27,6 +31,9 @@ namespace TheWorld
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(_config);
+            ;
+
             if (_env.IsEnvironment("Development")  || _env.IsEnvironment("Testing"))
                 services.AddScoped<IMailService, DebugMailService>();
             else
