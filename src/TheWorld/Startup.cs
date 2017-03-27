@@ -32,14 +32,14 @@ namespace TheWorld
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(_config);
-            ;
+            
 
-            if (_env.IsEnvironment("Development")  || _env.IsEnvironment("Testing"))
+            //if (_env.IsEnvironment("Development")  || _env.IsEnvironment("Testing"))
                 services.AddScoped<IMailService, DebugMailService>();
-            else
-            {
+            //else
+            //{
 
-            }
+            //}
 
             services.AddMvc();
             //services.AddCaching();
