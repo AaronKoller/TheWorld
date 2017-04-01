@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using TheWorld.Models;
 using TheWorld.Services;
 using TheWorld.ViewModels;
 
@@ -13,17 +14,22 @@ namespace TheWorld.Controllers.Web
     public class AppController : Controller
     {
         private IMailService _mailService;
-        //private IConfigurationBuilder _config;
+        private IConfigurationRoot _config;
+        private WorldContext _context;
 
-        public AppController(IMailService mailService)
+
+        public AppController(IMailService mailService, IConfigurationRoot config, WorldContext context)
         {
             _mailService = mailService;
-            //_config = config;
+            _config = config;
+            _context = context;
         }
 
         // GET: /<controller>/
         public IActionResult Index()
         {
+            var data = _context.Trips.ToList();
+
             return View();
         }
         public IActionResult Contact()
@@ -42,7 +48,7 @@ namespace TheWorld.Controllers.Web
             if(ModelState.IsValid)
             {
                 //_mailService.SendMail(_config["MailSettings:ToAddress"], model.Email, "The World", model.Message);
-                _mailService.SendMail("aaron@gmail.com", model.Email, "The World", model.Message);
+                _mailService.SendMail(_config["MailSettings:ToAddress"], model.Email, "From TheWorld", model.Message);
 
                 ModelState.Clear();
                 ViewBag.UserMessage = "Message sent";

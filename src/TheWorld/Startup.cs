@@ -19,11 +19,9 @@ namespace TheWorld
             _env = env;
 
             var builder = new ConfigurationBuilder()
-                //.AddJsonFile(@"\..\..\config.json"); //D:config
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile(@"config.json")
                 .AddEnvironmentVariables();
-                //.AddJsonFile(@"config.json");
 
             _config = builder.Build();
         }
