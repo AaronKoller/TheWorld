@@ -305,3 +305,7 @@ __pycache__/
 # End of https://www.gitignore.io/api/windows,visualstudio
 /src/aspdotnetcore-efcore-bootstrap-angular-web-app.zip
 /src/aspdotnetcore-efcore-bootstrap-angular-web-app
+/src/TheWorld/Migrations
+/src/TheWorld/Migrations/WorldContextModelSnapshot.cs
+/src/TheWorld/Migrations/20170401055516_IntialDatabase.Designer.cs
+/src/TheWorld/Migrations/20170401055516_IntialDatabase.cs

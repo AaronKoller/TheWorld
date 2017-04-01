@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8E81CA7-B16
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheWorld", "src\TheWorld\TheWorld.csproj", "{B3351A65-4D2C-4DFD-B774-86A4B0A6A4B8}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TheWorldDb", "TheWorldDb\TheWorldDb.sqlproj", "{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,11 +31,30 @@ Global
 		{B3351A65-4D2C-4DFD-B774-86A4B0A6A4B8}.Release|x64.Build.0 = Release|Any CPU
 		{B3351A65-4D2C-4DFD-B774-86A4B0A6A4B8}.Release|x86.ActiveCfg = Release|Any CPU
 		{B3351A65-4D2C-4DFD-B774-86A4B0A6A4B8}.Release|x86.Build.0 = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|x64.Build.0 = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|x86.Build.0 = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|x64.ActiveCfg = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|x64.Build.0 = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|x64.Deploy.0 = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|x86.ActiveCfg = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|x86.Build.0 = Release|Any CPU
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B3351A65-4D2C-4DFD-B774-86A4B0A6A4B8} = {D8E81CA7-B166-4C9D-A067-9E5EAE95C501}
+		{241E8C19-DB5A-40CE-A0B0-596A880A9CC0} = {D8E81CA7-B166-4C9D-A067-9E5EAE95C501}
 	EndGlobalSection
 EndGlobal

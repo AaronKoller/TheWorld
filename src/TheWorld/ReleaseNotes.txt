@@ -1,2 +1,6 @@
 ﻿To install MVC to a blank project:  https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc/
 Install-Package Microsoft.AspNetCore.Mvc
+
+
+Notes for how to deploy the data to Azure:
+https://www.youtube.com/watch?v=ZZ5lFiJtbBU
