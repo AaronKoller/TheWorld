@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Bson;
 using TheWorld.Models;
 
 namespace TheWorld.Controllers.Api
 {
+    [Route("api/trips")]
     public class TripsController : Controller
     {
         private IWorldRepository _repository;
@@ -16,10 +18,16 @@ namespace TheWorld.Controllers.Api
         {
             _repository = repository;
         }
-        [HttpGet("api/trips")]
+        [HttpGet("")]
         public IActionResult Get()
         {
             return Ok(_repository.GetAllTrips());
+        }
+
+        [HttpPost("")]
+        public IActionResult Post([FromBody] Trip theTrip)
+        {
+            return Ok(true);
         }
     }
 }
