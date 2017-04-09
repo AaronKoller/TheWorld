@@ -22,7 +22,7 @@ namespace TheWorld.Models
                 var usTrip = new Trip()
                 {
                     DateCreated = DateTime.UtcNow,
-                    NAME = "US Trip",
+                    Name = "US Trip",
                     UserName = "", //TODO Add user name
                     Stops = new List<Stop>()
                     {
@@ -42,7 +42,7 @@ namespace TheWorld.Models
                 var worldTrip = new Trip()
                 {
                     DateCreated = DateTime.UtcNow,
-                    NAME = "WorldTrip",
+                    Name = "WorldTrip",
                     UserName = "", //TODO Add user name
                     Stops = new List<Stop>()
                     {
