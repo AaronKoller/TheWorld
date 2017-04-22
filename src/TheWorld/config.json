@@ -4,5 +4,8 @@
   },
   "ConnectionStrings": {
     "defaultConnection": "Server=(localdb)\\MSSQLLocalDb;Database=TheWorldDb;Trusted_Connection=true;MultipleActiveResultSets=True;"
-  }
+  },
+  "Keys": {
+    "BingKey": "DONTEVERPUTKEYSINSOURCECONTROL" 
+  } 
 }
