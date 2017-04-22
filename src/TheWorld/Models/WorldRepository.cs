@@ -19,6 +19,18 @@ namespace TheWorld.Models
             _logger = logger;
         }
 
+        public void AddStop(string tripName, Stop newStop)
+        {
+            var trip = GetTripByName(tripName);
+
+            if (trip != null)
+            {
+                trip.Stops.Add(newStop);
+                _context.Stops.Add(newStop);
+            }
+
+        }
+
         public IEnumerable<Trip> GetAllTrips()
         {
             _logger.LogInformation("Getting all trips from the database.");
@@ -42,5 +54,7 @@ namespace TheWorld.Models
                 Where(t => t.Name == tripName).
                 FirstOrDefault();
         }
+
+
     }
 }
