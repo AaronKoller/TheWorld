@@ -22,7 +22,7 @@ namespace TheWorld.Services
             _config = config;
         }
 
-        public async Task<GeoCoordsResult> GeoCoordsService(string name)
+        public async Task<GeoCoordsResult> GetCoordsAsync(string name)
         {
             var result = new GeoCoordsResult()
             {
